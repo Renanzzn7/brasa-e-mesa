@@ -1,0 +1,136 @@
+.reservation {
+  padding: 100px 60px;
+
+  background:
+    linear-gradient(
+      rgba(21, 21, 21, 0.92),
+      rgba(21, 21, 21, 0.92)
+    ),
+    url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=2000&q=80");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.reservationContent {
+  max-width: 900px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.reservationSubtitle {
+  margin-bottom: 15px;
+
+  color: #c47a32;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.reservationContent h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: 1;
+}
+
+.reservationContent h2 span {
+  color: #c47a32;
+}
+
+.reservationDescription {
+  max-width: 600px;
+  margin: 25px auto 45px;
+
+  color: #bdbdbd;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.reservationForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  padding: 30px;
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+}
+
+.formGroup label {
+  margin-bottom: 8px;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 13px;
+
+  border: 1px solid #444;
+  border-radius: 5px;
+  outline: none;
+
+  background-color: #ffffff;
+  color: #151515;
+
+  font-family: inherit;
+}
+
+.reservationForm button {
+  grid-column: 1 / -1;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #c47a32;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.reservationForm button:hover {
+  background-color: #a85f1f;
+}
+
+@media (max-width: 600px) {
+  .reservation {
+    padding: 70px 20px;
+  }
+
+  .reservationForm {
+    grid-template-columns: 1fr;
+
+    padding: 20px;
+  }
+
+  .reservationForm button {
+    grid-column: auto;
+  }
+}
